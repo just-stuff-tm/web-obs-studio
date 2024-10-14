@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBS Studio Replica</title>
     <link rel="stylesheet" href="style.css">
-    <title>Web OBS Studio</title>
 </head>
 <body>
-    <header>
-        <h1>Web OBS Studio</h1>
-    </header>
-    <main>
-        <div id="video-container">
-            <!-- Video preview will go here -->
+    <div class="container">
+        <h1>OBS Studio Replica</h1>
+        <div class="preview">
+            <video id="videoPreview" autoplay muted></video>
         </div>
-        <div id="controls">
-            <!-- Control buttons (start, stop, etc.) -->
+        <div class="controls">
+            <button id="startStream">Start Stream</button>
+            <button id="stopStream">Stop Stream</button>
+            <div class="source-controls">
+                <button id="addSource">Add Source</button>
+                <button id="removeSource">Remove Source</button>
+            </div>
         </div>
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
