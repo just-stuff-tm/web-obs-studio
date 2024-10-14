@@ -9,6 +9,11 @@
 <body>
     <div class="container">
         <h1>OBS Studio Replica</h1>
+        <div class="scene-manager">
+            <input type="text" id="sceneName" placeholder="Scene Name">
+            <button id="addScene">Add Scene</button>
+            <select id="sceneSelector"></select>
+        </div>
         <div class="preview">
             <video id="videoPreview" autoplay muted></video>
         </div>
@@ -18,6 +23,13 @@
             <div class="source-controls">
                 <button id="addSource">Add Source</button>
                 <button id="removeSource">Remove Source</button>
+                <select id="sourceType">
+                    <option value="camera">Camera</option>
+                    <option value="image">Image</option>
+                    <option value="video">Video</option>
+                    <option value="text">Text</option>
+                    <option value="web">Web Source</option>
+                </select>
             </div>
         </div>
     </div>
