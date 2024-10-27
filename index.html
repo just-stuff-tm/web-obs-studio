@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>Web OBS Studio</h1>
-    
+
     <!-- Scene Collection -->
     <div class="scene-collection">
       <h2>Scenes</h2>
@@ -39,12 +39,14 @@
       <button id="startStream">Start Stream</button>
     </div>
 
-    <!-- Audio Controls -->
-    <div class="audio-controls">
-      <h2>Audio Sources</h2>
-      <input type="file" id="audioSourceInput" accept="audio/*">
-      <button id="addAudioSource">Add Audio Source</button>
-      <ul id="audioSourcesList"></ul>
+    <!-- Cropping Modal -->
+    <div id="cropModal" class="modal">
+      <div class="modal-content">
+        <h3>Crop Source</h3>
+        <div id="cropContainer"></div>
+        <button id="applyCrop">Apply Crop</button>
+        <button id="closeModal">Close</button>
+      </div>
     </div>
   </div>
 
